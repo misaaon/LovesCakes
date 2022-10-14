@@ -185,10 +185,13 @@ ul {
         text-align: center;
     }
 
-    .testimonio {
-        width: 100%;
-        padding: 16px;
+    .img-clientes {
+        .testimonio {
+            width: 100%;
+            padding: 16px;
+        }
     }
+
 }
 
 .pedido {
@@ -203,9 +206,23 @@ ul {
         color: $rosado;
     }
 
-    p {
-        font-size: 30px;
-        margin: 0;
+    .pedido-desktop {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .seccion-btn-pedido {
+            text-align: center;
+            p {
+                font-size: 30px;
+                margin: 0;
+                display: block;
+            }
+        }
+    
+        .imagen_pedido {
+            width: 100%;
+        }
     }
 
     .boton-pedido {
@@ -220,6 +237,64 @@ ul {
         border-radius: 50px;
     }
 }
+
+.formulario {
+    background-color: $celesteOscuro;
+    padding: 50px 0;
+    color: $blanco;
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+  
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+        gap: 10px;
+        color: $blanco;
+        font-weight: bold;
+
+        input[type="submit"] {
+            width: 50%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            align-self: center;
+            background-color: $rosado;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+        }
+    }
+    #comentarios {
+        margin-top: 50px;
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: $blanco;
+        }
+        p {
+            width: 80%;
+            margin: auto;
+            margin-top: 15px;
+            padding: 12px 8px;
+            background-color: $rosadoOscuro;
+        }
+    }
+}
+
+.error {
+    width: 100%;
+    margin: auto;
+    color: rgb(235, 42, 42);
+    background-color: rgb(190, 91, 91);
+    border: 1px solid rgb(216, 39, 39);
+    text-align: center;
+}
+
 
 .pie-pagina {
     display: flex;
@@ -239,8 +314,88 @@ ul {
     }
 }
 
+#tortas {
+    background-color: $blanco;
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 8px 8px 8px $rosadoOscuro;
+        margin: 50px 0 30px;
+        text-align: center;
+
+    }
+}
+
+.lista-tortas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    img {
+        width: 80%;
+    }
+}
+
 @media (min-width: 992px) {
-    
+    #inicio {
+        background-image: url(../imagenes/fondoDesktop.jpg);
+    }
+    .contenedor_principal {
+        height: 100vh;
+        position: relative;
+        .img-desktop {
+            :nth-child(1) {
+                position: absolute;
+                top: 15%;
+                left: 100px;
+            }
+            :nth-child(2) {
+                position: absolute;
+                top: 35%;
+                left: 200px;
+            }
+        }
+        h1 {
+            position: absolute;
+            top: 25%;
+            right: 100px;
+            font-size: 90px;
+        }
+    }
+    .clientes {
+        .img-clientes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .testimonio {
+                width: 40%;
+            }
+        }
+    }
+    .pedido {
+        .pedido-desktop {
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 100px;
+        }
+        .seccion-btn-pedido {
+            p {
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    #tortas {
+        h1 {
+            margin: 80px 0 40px;
+        }
+    }
+
+    .lista-tortas {
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-width: 768px) {
@@ -264,6 +419,9 @@ ul {
         h2 {
             padding-top: 40px;
             font-size: 50px;
+        }
+        .imagen_pedido {
+            width: 40%;
         }
     }
 }

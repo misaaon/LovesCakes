@@ -47,10 +47,10 @@
                             <a href="#trabajos">Nuestros <br /> Trabajos</a>
                         </li>
                         <li>
-                            <a href="#">Reseñas</a>
+                            <a href="#clientes">Reseñas</a>
                         </li>
                         <li>
-                            <a href="#">Pedir Online</a>
+                            <a href="#pedido">Pedir Online</a>
                         </li>
                     </ul>
                     <div class="menu__lista--redes">
@@ -61,7 +61,7 @@
                 </div>
             </nav>
         </header>
-        <a href="#" class="btn-wsp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://walink.co/43139b" class="btn-wsp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
 
     <main>
@@ -103,19 +103,37 @@
                   </div>
                 </div>
             </div>
-            <a href="#">ver mas</a>
+            <a href="tortas.html">ver mas</a>
         </div>
         <div id="clientes" class="clientes">
           <h2>¿que dicen los clientes?</h2>
-          <img src="imagenes/testimonio1.jpg" alt="testimonio" title="testimonio" class="testimonio">
-          <img src="imagenes/testimonio2.jpg" alt="testimonio" title="testimonio" class="testimonio">
-          <img src="imagenes/testimonio3.jpg" alt="testimonio" title="testimonio" class="testimonio">
+          <div class="img-clientes">
+            <img src="imagenes/testimonio1.jpg" alt="testimonio" title="testimonio" class="testimonio">
+            <img src="imagenes/testimonio2.jpg" alt="testimonio" title="testimonio" class="testimonio">
+            <img src="imagenes/testimonio3.jpg" alt="testimonio" title="testimonio" class="testimonio">
+          </div>
         </div>
         <div id="pedido" class="pedido container">
           <h2>El toque de dulzura <br> que necesitas...</h2>
-          <img src="imagenes/dulcesmomentos1.svg" alt="Imagen pedido" class="w-60">
-          <p>¡hace tu pedido!</p>
-          <a href="#" class="boton-pedido">contactar</a>
+          <div class="pedido-desktop">
+          <img src="imagenes/dulcesmomentos1.svg" alt="Imagen pedido" class="imagen_pedido">
+            <div class="seccion-btn-pedido">
+              <p>¡hace tu pedido!</p>
+              <a href="https://walink.co/43139b" class="boton-pedido">contactar</a>
+            </div>
+          </div>
+        </div>
+        <div class="formulario">
+          <h2>Si ya tuviste experiencia con nosotros <br/> dejanos un comentario!</h2>
+          <form action="#" id="formulario">
+            <label>Nombre:</label>
+            <input type="text" placeholder="Nombre" id="nombre">
+            <label>Escribi tu comentario...</label>
+            <textarea id="comentario" placeholder="Dejanos tu reseña :)"></textarea>
+            <input type="submit" value="comentar" id="btn-submit">
+          </form>
+          <div id="comentarios">
+          </div>
         </div>
     </main>
     
@@ -124,7 +142,7 @@
         <img src="imagenes/logo.png" alt="Logo LovesCakes" width="50">
       </div>
       <div class="copy">
-        <small>LovesCakes © 2022</small>
+        <small>© LovesCakes 2022</small>
       </div>
       <div class="redes">
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>

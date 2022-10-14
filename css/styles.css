@@ -139,7 +139,7 @@ ul {
     font-size: 40px;
     color: #FFFFFF;
     text-align: center; }
-  .clientes .testimonio {
+  .clientes .img-clientes .testimonio {
     width: 100%;
     padding: 16px; }
 
@@ -151,9 +151,19 @@ ul {
     padding-top: 30px;
     font-size: 40px;
     color: #FF8E7B; }
-  .pedido p {
-    font-size: 30px;
-    margin: 0; }
+  .pedido .pedido-desktop {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .pedido .pedido-desktop .seccion-btn-pedido {
+      text-align: center; }
+      .pedido .pedido-desktop .seccion-btn-pedido p {
+        font-size: 30px;
+        margin: 0;
+        display: block; }
+    .pedido .pedido-desktop .imagen_pedido {
+      width: 100%; }
   .pedido .boton-pedido {
     font-family: sans-serif;
     font-size: 18px;
@@ -164,6 +174,52 @@ ul {
     color: whitesmoke;
     background-color: #20B038;
     border-radius: 50px; }
+
+.formulario {
+  background-color: #7f95e4;
+  padding: 50px 0;
+  color: whitesmoke; }
+  .formulario h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px; }
+  .formulario #formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 10px;
+    color: whitesmoke;
+    font-weight: bold; }
+    .formulario #formulario input[type="submit"] {
+      width: 50%;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      align-self: center;
+      background-color: #FF8E7B;
+      border-radius: 10px;
+      border: none;
+      font-weight: bold; }
+  .formulario #comentarios {
+    margin-top: 50px; }
+    .formulario #comentarios h2 {
+      text-align: center;
+      font-weight: bold;
+      color: whitesmoke; }
+    .formulario #comentarios p {
+      width: 80%;
+      margin: auto;
+      margin-top: 15px;
+      padding: 12px 8px;
+      background-color: #FF5C76; }
+
+.error {
+  width: 100%;
+  margin: auto;
+  color: #eb2a2a;
+  background-color: #be5b5b;
+  border: 1px solid #d82727;
+  text-align: center; }
 
 .pie-pagina {
   display: flex;
@@ -178,6 +234,59 @@ ul {
     column-gap: 15px;
     opacity: .5; }
 
+#tortas {
+  background-color: whitesmoke; }
+  #tortas h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 8px 8px 8px #FF5C76;
+    margin: 50px 0 30px;
+    text-align: center; }
+
+.lista-tortas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px; }
+  .lista-tortas img {
+    width: 80%; }
+
+@media (min-width: 992px) {
+  #inicio {
+    background-image: url(../imagenes/fondoDesktop.jpg); }
+  .contenedor_principal {
+    height: 100vh;
+    position: relative; }
+    .contenedor_principal .img-desktop :nth-child(1) {
+      position: absolute;
+      top: 15%;
+      left: 100px; }
+    .contenedor_principal .img-desktop :nth-child(2) {
+      position: absolute;
+      top: 35%;
+      left: 200px; }
+    .contenedor_principal h1 {
+      position: absolute;
+      top: 25%;
+      right: 100px;
+      font-size: 90px; }
+  .clientes .img-clientes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .clientes .img-clientes .testimonio {
+      width: 40%; }
+  .pedido .pedido-desktop {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 100px; }
+  .pedido .seccion-btn-pedido p {
+    padding-bottom: 10px; }
+  #tortas h1 {
+    margin: 80px 0 40px; }
+  .lista-tortas {
+    flex-wrap: wrap; } }
+
 @media (min-width: 768px) {
   .contenedor_menu .boton-hamburguesa i {
     color: #7f95e4; }
@@ -187,4 +296,6 @@ ul {
     width: 50%; }
   .pedido h2 {
     padding-top: 40px;
-    font-size: 50px; } }
+    font-size: 50px; }
+  .pedido .imagen_pedido {
+    width: 40%; } }
